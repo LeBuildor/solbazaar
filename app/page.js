@@ -25,9 +25,9 @@ export default function Home() {
 
   return (
     <main className="container">
-      <div style={{ textAlign: 'center', marginTop: '20px' }}>
+      <div style={{ textAlign: 'center', margin: '40px 0 20px 0' }}>
         <Link href="/create">
-          <span style={{ fontSize: '1.2rem', fontFamily: 'var(--font-retro)', color: 'var(--text-main)', cursor: 'pointer' }}>[sell a product]</span>
+          <span style={{ fontSize: '2rem', fontFamily: 'var(--font-main)', fontWeight: 'bold', color: '#fff', cursor: 'pointer' }}>[list a product]</span>
         </Link>
       </div>
 
