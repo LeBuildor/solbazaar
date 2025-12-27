@@ -1,27 +1,29 @@
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+  /* Colors */
+  --bg-dark: #13141b;
+  --bg-card: #1f2129;
+  --accent-green: #80ffba; /* Pump.fun bright green */
+  --accent-blue: #88b3ff;
+  --accent-yellow: #ffdf00; /* King of the hill yellow */
+  --accent-danger: #ff5f5f;
+  
+  --text-main: #ffffff;
+  --text-muted: #8a8a8a;
+  --text-link: #88b3ff;
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
+  --border-color: #2e303e;
+  
+  /* Spacing */
+  --spacing-xs: 4px;
+  --spacing-sm: 8px;
+  --spacing-md: 16px;
+  --spacing-lg: 24px;
+  --spacing-xl: 32px;
 
-html,
-body {
-  max-width: 100vw;
-  overflow-x: hidden;
-}
-
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  /* UI Config */
+  --border-radius: 4px; /* Slightly rounded but mostly sharp for retro feel */
+  --font-main: 'Inter', sans-serif; /* Fallback/Main readable */
+  --font-retro: 'Press Start 2P', cursive; /* Headers */
 }
 
 * {
@@ -30,13 +32,55 @@ body {
   margin: 0;
 }
 
+body {
+  background-color: var(--bg-dark);
+  color: var(--text-main);
+  font-family: var(--font-main);
+   -webkit-font-smoothing: antialiased;
+}
+
 a {
   color: inherit;
   text-decoration: none;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
+/* Utilities */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 var(--spacing-md);
+}
+
+.retro-shadow {
+   box-shadow: 4px 4px 0px 0px rgba(0,0,0,0.5);
+}
+
+/* Typography map */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.text-retro {
+  font-family: var(--font-retro);
+  text-transform: uppercase;
+}
+
+.text-green { color: var(--accent-green); }
+.text-yellow { color: var(--accent-yellow); }
+.text-blue { color: var(--accent-blue); }
+.text-muted { color: var(--text-muted); }
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--bg-dark); 
+}
+::-webkit-scrollbar-thumb {
+  background: var(--border-color); 
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--text-muted); 
 }

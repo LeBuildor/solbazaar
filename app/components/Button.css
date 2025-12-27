@@ -1,0 +1,49 @@
+/* components/Button.css */
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: var(--spacing-sm) var(--spacing-md);
+    font-family: var(--font-retro);
+    font-size: 14px;
+    text-transform: uppercase;
+    cursor: pointer;
+    border: 1px solid transparent;
+    background: transparent;
+    color: var(--text-main);
+    transition: all 0.2s ease;
+    user-select: none;
+}
+
+.btn-primary {
+    background-color: var(--accent-blue);
+    color: var(--bg-dark);
+    border: 1px solid var(--accent-blue);
+    box-shadow: 2px 2px 0px 0px #000;
+}
+
+.btn-primary:active {
+    box-shadow: 0px 0px 0px 0px #000;
+    transform: translate(2px, 2px);
+}
+
+.btn-secondary {
+    background-color: var(--accent-green);
+    color: var(--bg-dark);
+    border: 1px solid var(--accent-green);
+    box-shadow: 2px 2px 0px 0px #000;
+}
+
+.btn-secondary:active {
+    box-shadow: 0px 0px 0px 0px #000;
+    transform: translate(2px, 2px);
+}
+
+.btn-ghost {
+    color: var(--text-muted);
+}
+
+.btn-ghost:hover {
+    text-decoration: underline;
+    color: var(--text-main);
+}

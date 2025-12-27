@@ -1,0 +1,41 @@
+/* components/KingOfTheHill.css */
+.koth-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: var(--spacing-lg) 0;
+    text-align: center;
+}
+
+.koth-title {
+    font-family: var(--font-retro);
+    color: var(--accent-yellow);
+    font-size: 1.2rem;
+    margin-bottom: var(--spacing-md);
+    text-shadow: 2px 2px 0px #000;
+    /* Simulate fire effect with text shadow or animation if possible, keep simple for now */
+}
+
+.koth-content {
+    display: flex;
+    gap: var(--spacing-md);
+    align-items: flex-start;
+    max-width: 600px;
+    background: transparent;
+    /* Or maybe a highlight bg? */
+}
+
+.koth-img {
+    width: 120px;
+    height: 120px;
+    background: #ccc;
+    object-fit: cover;
+    border: 1px solid var(--text-main);
+}
+
+.koth-details {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}

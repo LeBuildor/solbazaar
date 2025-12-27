@@ -1,0 +1,38 @@
+/* components/Header.css */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    font-family: var(--font-retro);
+    font-size: 0.8rem;
+}
+
+.header-left,
+.header-right {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.nav-link {
+    color: var(--text-main);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.nav-link:hover {
+    text-decoration: underline;
+}
+
+.pill {
+    background: var(--bg-card);
+    padding: 4px 12px;
+    border-radius: 12px;
+    font-family: var(--font-main);
+    font-size: 0.8rem;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    border: 1px solid var(--border-color);
+}

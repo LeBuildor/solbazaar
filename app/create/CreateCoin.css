@@ -1,0 +1,72 @@
+/* create/CreateCoin.css */
+.create-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: var(--spacing-lg) 0;
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-md);
+}
+
+.back-link {
+    text-align: center;
+    margin-bottom: var(--spacing-md);
+    cursor: pointer;
+    font-size: 1.1rem;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.form-label {
+    color: var(--accent-blue);
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.form-input {
+    background-color: #2a2d36;
+    border: 1px solid #3a3d46;
+    padding: 12px;
+    color: #fff;
+    border-radius: 4px;
+    outline: none;
+    font-family: var(--font-main);
+}
+
+.form-input:focus {
+    border-color: var(--accent-blue);
+}
+
+.form-textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+
+.upload-box {
+    border: 2px dashed #3a3d46;
+    background-color: #1f2129;
+    padding: 30px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    gap: 10px;
+    color: var(--text-muted);
+}
+
+.upload-box:hover {
+    border-color: var(--accent-blue);
+}
+
+.helper-text {
+    font-size: 0.8rem;
+    color: var(--text-muted);
+    text-align: center;
+    margin-top: 10px;
+}

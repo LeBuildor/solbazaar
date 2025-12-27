@@ -1,0 +1,22 @@
+[
+    {
+        "id": 1,
+        "name": "Vintage Leather Jacket",
+        "ticker": "JKT01",
+        "description": "High quality vintage leather jacket. Size L. Lightly worn.",
+        "price": "1.5",
+        "seller": "VintageKing",
+        "createdAt": "2024-12-25T10:00:00.000Z",
+        "image": "https://placehold.co/150/brown/white"
+    },
+    {
+        "id": 2,
+        "name": "Gaming PC Setup",
+        "ticker": "PC99",
+        "description": "Full setup including RTX 4090. Local pickup only.",
+        "price": "15",
+        "seller": "GamerGuy",
+        "createdAt": "2024-12-24T10:00:00.000Z",
+        "image": "https://placehold.co/150/black/green"
+    }
+]
